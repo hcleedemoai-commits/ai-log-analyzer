@@ -33,20 +33,9 @@ An intelligent, **cost-optimized** AI tool that:
 ---
 
 ## 🏗️ System Architecture & Workflow
-images/workflow_diagram.png
 
+![ai-powered-log-analysis-workflow](images/workflow_diagram.png)
 
-💰 Cost Optimization Strategy
-Optimization	Method	Impact
-Log Preprocessing	Filter INFO, keep only ERROR/WARN	80% token reduction
-Error Pattern Detection	Identify and group repeated errors	30% further compression
-Smart Caching	Store error signatures + reports	Zero cost for repeat issues
-Hybrid Deployment	Local sentry + Cloud analyst	95% cost savings in production
-Real-World Cost Estimate
-Scenario	Without Optimization	With Optimization
-Daily scans (100 logs/day)	~$5-10/day	~$0.10-0.50/day
-Monthly operations (30 days)	~$150-300/month	~$3-15/month
-Annual savings	-	~$1,800-3,400/year
 
 ## Project Structure
 
@@ -106,10 +95,12 @@ Reports folder: Find saved reports with timestamps
 
 ### 7. Sample Output
 1. Initial output
-images/sample_output1.png
+
+![ai-powered-log-analysis-initial-output](images/sample_output1.png)
 
 2. Following output with cache
-images/sample_output2.png
+
+![ai-powered-log-analysis-following-output](images/sample_output2.png)
 
 ======================================================================
 
