@@ -1,0 +1,26 @@
+flowchart TD
+    A[📂 ERP System Logs] --> B[📖 Read Log File]
+    B --> C[🔄 Preprocess Logs]
+    
+    C --> C1[Filter INFO<br/>Keep ERROR & WARN]
+    C1 --> C2[Compress 80%<br/>Extract Error Patterns]
+    C2 --> D[🔍 Generate Fingerprint]
+    
+    D --> E{💾 Check Cache}
+    
+    E -->|Cache HIT| F[♻️ Load Cached Report]
+    E -->|Cache MISS| G[🤖 Call OpenRouter API]
+    
+    G --> H[📊 Generate Structured Report]
+    H --> I[💾 Save to Cache]
+    I --> J[📄 Output Report]
+    F --> J
+    
+    J --> K[🖥️ Display on Screen]
+    J --> L[💾 Archive to reports/]
+    
+    K --> M[📋 Executive Summary]
+    K --> N[📊 Log Statistics]
+    K --> O[🚨 Critical Issues]
+    K --> P[🎯 Priority Ranking]
+    K --> Q[🔧 Actionable Recommendations]
